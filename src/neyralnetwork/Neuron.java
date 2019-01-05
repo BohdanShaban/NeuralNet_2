@@ -65,7 +65,7 @@ public class Neuron implements Serializable {
      */
     public void takeDendSygnals(double[] dendSygn,double bias){
         //+1 тому що сигнали дендритів надсилаються без врахування нейрону зміщення
-        if(dendSygn.length+1!=dendritCount)throw new NotMatchSygnDendCount();
+        if(dendSygn.length+1!=dendritCount)throw new ();
         sigmIn=dendSygn;
         biasIn=bias;
         e=0.0;
