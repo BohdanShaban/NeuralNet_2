@@ -1,6 +1,7 @@
 package neyralnetwork;
 
 import java.io.Serializable;
+
 /**
  *
  * @author user
@@ -65,7 +66,7 @@ public class Neuron implements Serializable {
      */
     public void takeDendSygnals(double[] dendSygn,double bias){
         //+1 тому що сигнали дендритів надсилаються без врахування нейрону зміщення
-        if(dendSygn.length+1!=dendritCount)throw new ();
+        if(dendSygn.length+1!=dendritCount)throw new NotMatchNeyronSygnCount();
         sigmIn=dendSygn;
         biasIn=bias;
         e=0.0;

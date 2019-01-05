@@ -1,6 +1,7 @@
 package neyralnetwork;
 
 import java.io.Serializable;
+
 /**
  *
  * @author user
